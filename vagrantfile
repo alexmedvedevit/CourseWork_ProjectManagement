@@ -6,7 +6,8 @@ Vagrant.configure('2') do | config |
         cont.vm.provider 'virtualbox' do |vb|
             vb.customize ['modifyvm', :id, '--memory', '1024']
         end
+	cont.cm.network "forwarded_port", guest: 5050, host: 7070
         cont.vm.provision :docker
-        cont.vm.provision :docker_compose, yml: "/docker-compose.yml", run: "always"
+        cont.vm.provision :docker_compose, yml: "/vagrant/docker-compose.yml", run: "always"
     end    
 end
