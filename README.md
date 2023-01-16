@@ -10,4 +10,4 @@
 ## 2) Запуск "contract/contract/" ##
 
 ![Скриншот](/screenshots/contract1.png)
-![Скриншот](/screenshots/contract1.png)
+![Скриншот](/screenshots/contract2.png)
